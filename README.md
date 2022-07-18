@@ -1,13 +1,25 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# It's a Hardhat Project
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
+npm i
 npx hardhat run scripts/deploy.js
 ```
+It'll be deployed to Optimism Kovan (testnet)
+Take note contract address (It'll be NFT contract)
+
+Run node app
+```shell
+node ./app.js
+```
+
+It runs the nodejs backend API
+
+On browser got to
+```shell
+localhost:3000/upload_metadata
+```
+
+This endpoint allows you to upload a photo to IPFS through Pinata IPFS pinning service
+
