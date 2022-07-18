@@ -1,0 +1,26 @@
+{
+  "image": "https://gateway.pinata.cloud/ipfs/Qmb1sacLfU1QT5tMMxmH2LgqBuSAhc7CLG5eUCmLMprQL6",
+  "name": "Doggo",
+  "attributes": [
+    {
+      "trait_type": "origin",
+      "value": "Rescued on Avenida Bolivar, Bogota, Colombia"
+    },
+    {
+      "trait_type": "specie",
+      "value": "dog"
+    },
+    {
+      "trait_type": "race",
+      "value": "labrador"
+    },
+    {
+      "trait_type": "needs",
+      "value": "feeding"
+    },
+    {
+      "trait_type": "rehab",
+      "value": "false"
+    }
+  ]
+}
