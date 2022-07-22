@@ -31,8 +31,9 @@ app.post("/animal", upload.single("photo"), uploadFile);
 
 async function uploadFile(req, res) {
 
-  let token = req.cookies.token;
-  const { address, body } = await Web3Token.verify(token);
+  const token = req.headers['authorization'];
+
+  const { address } = await Web3Token.verify(token);
 
   const contractOwner = await getOwner();
 
