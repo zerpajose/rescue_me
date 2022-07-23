@@ -126,12 +126,11 @@ async function isOwner(req, res) {
 
   if(ethers.utils.getAddress(address) === ethers.utils.getAddress(contractOwner)){
 
-    res.json({is_owner: true, token: token});
+    res.json({is_owner: true, token: token, owner_address: ethers.utils.getAddress(contractOwner)});
   }
   else{
     res.json({is_owner: false, token: token});
   }
-
   res.end();
 }
 
