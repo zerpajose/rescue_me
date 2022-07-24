@@ -15,7 +15,11 @@ contract Animal is ERC721, ERC721URIStorage, Ownable {
 
   receive() external payable {}
 
+  event minted(address indexed _from, string indexed _uri);
+
   function safeMint(address to, string memory uri) public onlyOwner {
+    emit minted(to, uri);
+    
     uint256 tokenId = _tokenIdCounter.current();
     _tokenIdCounter.increment();
     _safeMint(to, tokenId);
